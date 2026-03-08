@@ -102,6 +102,7 @@
 </head>
 <body>
 
+    <div class="scroll-progress"></div>
     <nav class="topnav">
         <a href="https://reklamationsret.dk" class="nav-logo">Reklamationsret.dk</a>
         <div class="nav-links">
@@ -111,6 +112,7 @@
             <a href="https://info.reklamationsret.dk" class="active">Vidensbase</a>
             <a href="https://hjaelp.reklamationsret.dk">Hjælp</a>
         </div>
+        <button class="menu-toggle" aria-label="Menu" onclick="this.classList.toggle('active');this.previousElementSibling.classList.toggle('open')"><span></span><span></span><span></span></button>
     </nav>
 
     <header>
@@ -260,5 +262,14 @@
     })();
     </script>
 
+    <script>
+    /* v3-scroll-progress */
+    (function(){
+      var sp = document.querySelector('.scroll-progress');
+      if(sp) window.addEventListener('scroll', function(){
+        sp.style.width = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100) + '%';
+      }, {passive:true});
+    })();
+    </script>
 </body>
 </html>

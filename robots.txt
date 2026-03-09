@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://reklamationsret.dk/sitemap.xml
+Sitemap: https://info.reklamationsret.dk/sitemap.xml
 
 User-agent: GPTBot
 Allow: /

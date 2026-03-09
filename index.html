@@ -32,6 +32,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//plausible.io">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -79,6 +81,46 @@
             "@type": "Answer",
             "text": "Købeloven §83 sikrer dig 2 års reklamationsret. Butikken skal reparere, ombytte, give prisafslag eller refundere, hvis varen har fejl eller mangler."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad siger Købeloven §76 om mangelfri vare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Købeloven §76 slår fast, at varen skal svare til det aftalte og være fri for fejl og mangler på leveringstidspunktet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad er en mangel ifølge Købeloven §77?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En mangel foreligger, når varen ikke svarer til det aftalte i kvalitet, holdbarhed eller funktion – også selv om fejlen først viser sig senere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad betyder 14 dages fortrydelsesret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ved online-køb har du 14 dages fortrydelsesret fra modtagelsen. Du kan returnere varen uden begrundelse og få pengene tilbage. Returfragt betaler du som udgangspunkt selv."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad er Nævnenes Hus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nævnenes Hus er den offentlige klageinstans for forbrugere i Danmark. Du kan klage online for 100 kr. Ca. 73% af forbrugere får medhold i deres klage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad gør jeg hvis butikken afviser min reklamation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kontakt Forbrugerrådet Tænk for gratis rådgivning. Klag derefter til Nævnenes Hus for 100 kr. Butikken er forpligtet til at følge afgørelsen."
+          }
         }
       ]
     }
@@ -103,6 +145,22 @@
           "item": "https://info.reklamationsret.dk/"
         }
       ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Reklamationsret.dk",
+      "url": "https://reklamationsret.dk",
+      "logo": "https://reklamationsret.dk/og-image.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "WarrantyWallet",
+        "url": "https://warrantywallet.dk"
+      }
     }
     </script>
 </head>
